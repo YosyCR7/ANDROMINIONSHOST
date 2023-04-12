@@ -1,8 +1,10 @@
-<title>PS3HEN Installer</title>
+<title>Auto HEN Installer HFW 4.90</title>
+<link rel="stylesheet" href="style.css">
 <center>
-<h1><span style='color:#6e0fff'>Auto HEN Instalador para HFW 4.90</span></h1>
-<p>
-<h2><span style='color:red'>*** Agradecimientos a <span style='color:green'>ANDRO<span style='color:yellow'>MINIONS<span style='color:red'>_<span style='color:#6e0fff'>YosyCR7<span style='color:red'> ***
+<h1><span style='color:#6e0fff'>Host alternativo para instalar HEN en HFW 4.90</span></h1>
+<h2><span style='color:red'>*** <span style='color:green'>ANDRO<span style='color:yellow'>MINIONS<span style='color:red'>_<span style='color:#6e0fff'>YosyCR7<span style='color:red'> ***</span></h2>
+<hr>
+<h3><span style='color:#6e0fff'>Esto instalará HEN de forma áutomatica en tu PS3</span></h3>
 <hr>
 <div id="result"></div>
 <div id="exploit"></div>
@@ -388,7 +390,7 @@ function listener()
 	var myListener = function ()
 	{
 		document.removeEventListener('mousemove', myListener, false);
-		showMsg('<h2>Instalando HEN, por favor espere...</h2>');
+		showMsg('<h2>Instalando HEN, por favor espere al reinicio...</h2>');
 		triggerX();
 	};
 	document.addEventListener('mousemove', myListener, false);
@@ -396,14 +398,44 @@ function listener()
 function triggerX()
 {
 	setTimeout(trigger,50,jump_1_addr);
-	setTimeout(showMsg,2000,"<h2><span style='color:red'>Error al cargar el archivo del HEN. Cierre el navegador y prueba de nuevo.</span></h2>");
+	setTimeout(showMsg,2000,"<h2><span style='color:red'>No se pudo cargar el archivo de instalación. Cierra el navegador e inténtalo de nuevo.</span></h2>");
 	t_out=0;
 	total_loops=0;
 }
 function HFWmsg()
 {
-	showMsg("<h2><span style='color:red'>Usted debe instalar Hybrid Firmware (HFW) 4.90 antes de instalar HEN!</h2></span>");
+	showMsg("<h2><span style='color:red'>¡Debe instalar el firmware híbrido (HFW) 4.90 en tu consola antes de instalar HEN!</h2></span>");
 	throw new Error('');
 }
 if(fwv=="4.90"){initROP(true)}else{HFWmsg()}
 </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3><span style='color:black'>Creditos: Oficial PS3Xploit.com || PSX-Place.com || All PS3 Cominunity</span></h3>
+Agradecimientos a Coro, lmn7, Joonie, habib, Evilnat, zecoxao, DeViL303, xps3riments, aldostools, STLcardsWS and PS3Xploit Team for their work used or hosted here.
+<br>
+© 2023 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
